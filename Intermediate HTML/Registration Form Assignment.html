@@ -24,15 +24,21 @@
         <!-- Gender Section -->
         <div>
             <label for="genderMale">Male</label>
-            <input id="genderMale" type="radio" name="gender" value="male">
+            <input name="gender" id="genderMale" type="radio" value="male">
             <label for="genderFemale">Female</label>
-            <input id="genderFemale" type="radio" name="gender" value="female">
+            <input name="gender" id="genderFemale" type="radio" value="female">
             <label for="genderOther">Other</label>
-            <input id="genderOther" type="radio" name="gender" value="other">
+            <input name="gender" id="genderOther" type="radio" value="other">
         </div>
 
         <!-- Email/Pass Section -->
+        <div>
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="email" placeholder="Your Email" required>
 
+            <label for="pass">Password:</label>
+            <input name="pass" id="pass" type="password" minlength="5" maxlength="10" placeholder="Your Password">
+        </div>
 
         <!-- Birthday Section -->
 
