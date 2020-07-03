@@ -37,7 +37,7 @@
             <input name="email" id="email" type="email" placeholder="Your Email" required>
 
             <label for="pass">Password:</label>
-            <input name="pass" id="pass" type="password" minlength="5" maxlength="10" placeholder="Your Password">
+            <input name="pass" id="pass" type="password" pattern=".{5,10}" placeholder="Your Password" title="Password must be between 5 to 10 characters" required>
         </div>
 
         <!-- Birthday Section -->
@@ -66,7 +66,10 @@
         </div>
 
         <!-- Terms Section -->
-
+        <div>
+            <label for="terms">I agree to the terms and conditions</label>
+            <input name="terms" id="terms" type="checkbox">
+        </div>
 
         <!-- Submit Form -->
         <button>Submit</button>
